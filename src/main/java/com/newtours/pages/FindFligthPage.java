@@ -28,7 +28,7 @@ public class FindFligthPage {
         this.continueButton.click();
     }
 
-    public void goToOrderConfirmationPage() {
+    public void goToFlightConfirmationPage() {
         this.wait.until(ExpectedConditions.elementToBeClickable(this.securePurchaseButton));
         this.securePurchaseButton.click();
     }
