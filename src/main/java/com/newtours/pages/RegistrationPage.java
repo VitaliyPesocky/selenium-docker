@@ -27,12 +27,12 @@ public class RegistrationPage {
     public RegistrationPage(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, 30);
+        PageFactory.initElements(driver, this);
     }
 
     public void goTo() {
         this.driver.get("http://newtours.demoaut.com/mercurywelcome");
         this.wait.until(ExpectedConditions.visibilityOf(this.firstName));
-        PageFactory.initElements(driver, this);
     }
 
     public void enterUserDetails(String firstName, String lastName) {
