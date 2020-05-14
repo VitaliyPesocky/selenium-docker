@@ -14,7 +14,7 @@ public class FlightConfirmationPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    @FindBy(xpath = "//font[contains(text(), 'Flight Confirmation')]")
+    @FindBy(xpath = "//font[contains(text(), 'Confirmation')]")
     private WebElement flightConfirmationHeader;
     @FindBy(xpath = "//font[contains(text(), 'USD')]")
     private List<WebElement> prices;
