@@ -14,7 +14,7 @@ public class FindFligthPage {
 
     @FindBy(name = "reserveFlights")
     private WebElement continueButton;
-    @FindBy(name = "reserveFlights")
+    @FindBy(name = "buyFlights")
     private WebElement securePurchaseButton;
 
     public FindFligthPage(WebDriver driver) {
