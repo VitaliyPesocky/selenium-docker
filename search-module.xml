@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="search-module">
+    <test name="search-test-java">
+        <parameter name="keyword" value="Java" />
+        <classes>
+            <class name="com.searchmodule.tests.SearchTest" />
+        </classes>
+    </test>
+    <test name="search-test-QA">
+        <parameter name="keyword" value="QA" />
+        <classes>
+            <class name="com.searchmodule.tests.SearchTest" />
+        </classes>
+    </test>
+    <test name="search-test-webdriver">
+        <parameter name="keyword" value="webdriver" />
+        <classes>
+            <class name="com.searchmodule.tests.SearchTest" />
+        </classes>
+    </test>
+    <test name="search-test-docker">
+        <parameter name="keyword" value="docker" />
+        <classes>
+            <class name="com.searchmodule.tests.SearchTest" />
+        </classes>
+    </test>
+    <test name="search-test-kuberbetes">
+        <parameter name="keyword" value="kuberbetes" />
+        <classes>
+            <class name="com.searchmodule.tests.SearchTest" />
+        </classes>
+    </test>
+</suite>
