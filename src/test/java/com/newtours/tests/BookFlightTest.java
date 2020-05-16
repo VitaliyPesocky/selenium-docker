@@ -59,8 +59,4 @@ public class BookFlightTest extends BaseTest {
         Assert.assertEquals(actualPrice, expectedPrice);
     }
 
-    @AfterClass
-    public void closeDriver() {
-        this.driver.quit();
-    }
 }
