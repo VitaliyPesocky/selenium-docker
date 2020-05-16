@@ -1,5 +1,6 @@
 package com.newtours.tests;
 
+import base.BaseTest;
 import com.newtours.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,19 +10,16 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class BookFlightTest {
+public class BookFlightTest extends BaseTest {
 
-    private WebDriver driver;
     private String numOfPassengers;
     private String expectedPrice;
 
     @BeforeTest
     @Parameters({"numOfPassengers", "expectedPrice"})
-    public void setupDriver(String numOfPassengers, String expectedPrice) {
+    public void setupParameters(String numOfPassengers, String expectedPrice) {
         this.numOfPassengers = numOfPassengers;
         this.expectedPrice = expectedPrice;
-        System.setProperty("webdriver.chrome.driver", "/Users/vitaliy/Downloads/chromedriver81/chromedriver");
-        this.driver = new ChromeDriver();
     }
 
     @Test
