@@ -39,10 +39,13 @@ public class SearchPage extends BasePage {
         this.videosLink.click();
     }
 
-    public void printResult() {
+    public int getCountOfVideos() {
         By videosLocator = By.className("tile--vid");
         this.wait.until(ExpectedConditions.numberOfElementsToBeMoreThan(videosLocator, 0));
-        System.out.println(this.allVideos.size());
+        int result = this.allVideos.size();
+        System.out.println(result);
+
+        return result;
     }
 
 }
