@@ -24,8 +24,8 @@
             <class name="com.searchmodule.tests.SearchTest" />
         </classes>
     </test>
-    <test name="search-test-kuberbetes">
-        <parameter name="keyword" value="kuberbetes" />
+    <test name="search-test-kubernetes">
+        <parameter name="keyword" value="kubernetes" />
         <classes>
             <class name="com.searchmodule.tests.SearchTest" />
         </classes>
